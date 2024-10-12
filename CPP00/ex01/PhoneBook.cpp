@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phonebook.cpp                                      :+:      :+:    :+:   */
+/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:40:40 by oseivane          #+#    #+#             */
-/*   Updated: 2024/10/12 12:59:22 by oseivane         ###   ########.fr       */
+/*   Updated: 2024/10/12 15:08:27 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -176,9 +176,9 @@ void	PhoneBook::searchContact()
 		else
 			std::cout << std::setw(10) << this->contact[i].getLastName() << "|";
 		if (this->contact[i].getNickName().size() > 10)
-			std::cout << std::setw(9) << this->contact[i].getNickName().substr(0, 9) << "." << "|";
+			std::cout << std::setw(9) << this->contact[i].getNickName().substr(0, 9) << "." << std::endl;
 		else
-			std::cout << std::setw(10) << this->contact[i].getNickName() << "|";
+			std::cout << std::setw(10) << this->contact[i].getNickName() << std::endl;
 	}
 	std::cout << "Enter the index that you want to display" << std::endl;
 	std::cout << ">> ";

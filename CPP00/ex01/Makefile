@@ -6,7 +6,7 @@
 #    By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/07 10:14:04 by oseivane          #+#    #+#              #
-#    Updated: 2024/10/07 16:16:41 by oseivane         ###   ########.fr        #
+#    Updated: 2024/10/12 13:01:38 by oseivane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,9 +16,11 @@ YELLOW = \033[0;33m
 BLUE = \033[0;34m
 RST = \033[0m
 
-NAME    := megaphone
+NAME    := phonebook
 
-SRC     := megaphone.cpp
+SRC     := main.cpp \
+			PhoneBook.cpp \
+			Contact.cpp \
 
 OBJ_DIR := obj
 
@@ -38,7 +40,7 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME) > /dev/null
-	@echo "$(RED)Megaphone removed$(RST)"
+	@echo "$(RED)PhoneBook removed$(RST)"
 
 re: fclean all
 

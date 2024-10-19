@@ -1,0 +1,29 @@
+#ifndef HARL_HPP
+# define HARL_HPP
+
+# include <iostream>
+# include <ostream>
+# include <cstring>
+# include <iomanip>
+# include <string>
+
+/*
+Creando la clase con el desctructor, constructor, etc.
+*/
+
+class Harl
+{
+    private:
+        void    debug();
+        void    info();
+        void    warning();
+        void    error();
+
+    public:
+        Harl();
+        ~Harl();
+
+        void    complain(std::string level);
+};
+
+#endif

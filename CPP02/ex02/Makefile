@@ -16,7 +16,7 @@ YELLOW = \033[0;33m
 BLUE = \033[0;34m
 RST = \033[0m
 
-NAME    := orthodox
+NAME    := talking
 
 SRC     := main.cpp \
 			Fixed.cpp \
